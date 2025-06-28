@@ -1,1 +1,5 @@
 claude code とmcpを使ったplayground
+
+実装が終わった後はplaywright mcpを使って実際にアクセスして実装した機能を一通り試してエラーがないか確認する
+
+簡単なwebページを実装する。
