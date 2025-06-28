@@ -5,7 +5,8 @@
       "mcp__playwright__browser_take_screenshot",
       "mcp__playwright__browser_tab_new",
       "mcp__playwright__browser_close",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "mcp__playwright__browser_hover"
     ]
   },
   "enableAllProjectMcpServers": true,
