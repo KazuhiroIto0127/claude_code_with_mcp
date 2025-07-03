@@ -8,6 +8,7 @@ describe('Gallery HTML Structure', () => {
   beforeEach(() => {
     const html = readFileSync(join(process.cwd(), 'index.html'), 'utf-8')
       .replace('<link rel="stylesheet" href="style.css">', '')
+      .replace(/<script[\s\S]*?<\/script>/gi, '')
     document = new DOMParser().parseFromString(html, 'text/html')
     global.document = document
   })
@@ -54,6 +55,7 @@ describe('Gallery CSS Classes', () => {
   beforeEach(() => {
     const html = readFileSync(join(process.cwd(), 'index.html'), 'utf-8')
       .replace('<link rel="stylesheet" href="style.css">', '')
+      .replace(/<script[\s\S]*?<\/script>/gi, '')
     document = new DOMParser().parseFromString(html, 'text/html')
     global.document = document
   })

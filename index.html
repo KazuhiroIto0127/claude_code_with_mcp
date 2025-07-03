@@ -11,6 +11,11 @@
         <header class="gallery-header">
             <h1 class="title">創造の世界</h1>
             <p class="subtitle">芸術が生み出す無限の可能性</p>
+            
+            <div class="counter-section">
+                <button id="counterBtn" class="counter-button">カウント</button>
+                <div id="counterValue" class="counter-value">0</div>
+            </div>
         </header>
 
         <main class="gallery-main">
@@ -65,5 +70,13 @@
             <p>&copy; 2024 創造の世界 - すべての芸術に敬意を込めて</p>
         </footer>
     </div>
+
+    <script>
+        document.getElementById('counterBtn').addEventListener('click', function() {
+            const counterElement = document.getElementById('counterValue');
+            const currentValue = parseInt(counterElement.textContent);
+            counterElement.textContent = currentValue + 1;
+        });
+    </script>
 </body>
 </html>
