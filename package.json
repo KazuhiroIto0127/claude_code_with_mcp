@@ -1,0 +1,17 @@
+{
+  "name": "claude-code-mcp-playground",
+  "version": "1.0.0",
+  "description": "Playground for Claude Code and MCP integration",
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^9.3.4",
+    "@testing-library/jest-dom": "^6.2.0",
+    "@vitest/ui": "^1.1.0",
+    "happy-dom": "^12.10.3",
+    "vitest": "^1.1.0"
+  }
+}
